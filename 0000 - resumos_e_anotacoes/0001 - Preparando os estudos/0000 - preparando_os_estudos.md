@@ -1,2 +1,0 @@
-# Preparando os Estudos
-
