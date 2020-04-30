@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const { uuid, isUuid } = require('uuidv4');
 const app = express();
 
+// Permite que qualquer Front-end tenha acesso ao back-end
+app.use(cors());
 // Express needs this line to work with JSON
 app.use(express.json())
+
 
 
 const projects = []
