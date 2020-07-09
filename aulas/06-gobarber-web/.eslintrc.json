@@ -26,6 +26,7 @@
     "rules": {
       "prettier/prettier": "error",
       "react-hooks/rules-of-hooks": "error",
+      "no-unused-expressions":"off",
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "react/jsx-one-expression-per-line": "off",
