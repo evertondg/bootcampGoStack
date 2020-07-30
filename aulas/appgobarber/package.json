@@ -2,6 +2,11 @@
   "name": "appgobarber",
   "version": "0.0.1",
   "private": true,
+  "rnpm": {
+    "assets": [
+   "./assets/fonts/"
+    ]
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -25,7 +30,8 @@
     "react-native-reanimated": "^1.10.1",
     "react-native-safe-area-context": "^3.1.1",
     "react-native-screens": "^2.9.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "xcode": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
