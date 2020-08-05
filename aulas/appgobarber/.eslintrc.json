@@ -39,10 +39,10 @@
         {
           "ts": "never",
           "tsx": "never"
-        },
+        }
 
       ],
-      "eslint no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+      // "eslint no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
       "prettier/prettier": "error"
     },
     "settings": {
