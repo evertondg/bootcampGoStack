@@ -15,6 +15,7 @@ export default class EtherealMailPriver implements IMailProvider {
           pass: account.pass,
         },
       });
+      this.client = transporter;
     });
   }
 
