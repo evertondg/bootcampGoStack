@@ -47,6 +47,12 @@ describe('AuthenticateUser', () => {
   });
 
   it('should be not able to authenticate with wrong password', async () => {
+    await createUser.execute({
+      name: 'John Doe',
+      email: 'johndoe@example.com',
+      password: '123456',
+    });
+
     await expect(
       authenticateUser.execute({
         email: 'johndoe@example.com',
