@@ -234,7 +234,7 @@ export const Calendar = styled.aside`
   .DayPicker-Month {
     border-collapse: separate;
     border-spacing: 8px;
-    margin: 16px;
+    margin: 16px 16px 16px 0px;
   }
 
   .DayPicker-Day {
