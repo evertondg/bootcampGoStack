@@ -6,6 +6,7 @@ import 'react-day-picker/lib/style.css';
 
 import { FiPower, FiClock } from 'react-icons/fi';
 import { uuid } from 'uuidv4';
+import { Link } from 'react-router-dom';
 import {
   Header,
   Container,
@@ -85,7 +86,15 @@ const Dashboard: React.FC = () => {
           };
         });
 
-        setAppointments(appointmentsFormatted);
+        const sortedAppointments = appointmentsFormatted.sort(
+          (a: Appointment, b: Appointment) => {
+            if (a.date < b.date) return -1;
+            if (a.date > b.date) return 1;
+            return 0;
+          },
+        );
+
+        setAppointments(sortedAppointments);
       });
   }, [selectedDate]);
 
@@ -135,7 +144,9 @@ const Dashboard: React.FC = () => {
             <img src={user.avatar_url} alt={user.name} />
             <div>
               <span>Bem vindo,</span>
-              <strong>{user.name}</strong>
+              <Link to="/profile">
+                <strong>{user.name}</strong>
+              </Link>
             </div>
           </Profile>
 
