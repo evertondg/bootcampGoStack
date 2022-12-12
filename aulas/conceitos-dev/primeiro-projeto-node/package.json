@@ -10,7 +10,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "uuidv4": "^6.0.8"
   },
   "scripts": {
